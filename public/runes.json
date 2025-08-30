@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2025-08-30T00:00:00.000Z",
+  "scalesVersion": "1.0",
+  "runes": [
+    {
+      "id": "mythical",
+      "name": "Mythical",
+      "category": "Starter",
+      "rarity": "Mythical",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": { "type": "oneInN", "n": 1500, "display": "1/1.5k" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+      ]
+    },
+    {
+      "id": "secret",
+      "name": "Secret",
+      "category": "Starter",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: coins/essence/rune bulk/luck caps",
+      "chance": { "type": "oneInN", "n": 10000000, "display": "1/10M" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": 8, "capStatus": "capped" },
+        { "type": "essence", "mode": "multiplier", "cap": 3, "capStatus": "capped" },
+        { "type": "runeBulk", "mode": "multiplier", "cap": 2.5, "capStatus": "capped" },
+        { "type": "runeLuck", "mode": "multiplier", "cap": 5.5, "capStatus": "capped" }
+      ]
+    },
+    {
+      "id": "dusk",
+      "name": "DUSK",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": { "type": "oneInN", "n": 1, "display": "1/1" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+      ]
+    },
+    {
+      "id": "mystic",
+      "name": "MYSTIC",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Coins/gems/rune/rune bulk; some not maxed",
+      "chance": { "type": "oneInN", "n": 499990000000000, "display": "1/499.99T" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": 11, "capStatus": "capped" },
+        { "type": "gems", "mode": "multiplier", "cap": 1.19, "capStatus": "notMaxedYet" },
+        { "type": "rune", "mode": "multiplier", "cap": 3, "capStatus": "capped" },
+        { "type": "runeBulk", "mode": "multiplier", "cap": 2.2, "capStatus": "capped", "notes": ["normalized comma decimal 2,2x → 2.2x"] }
+      ]
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": { "type": "oneInN", "n": 1, "display": "1/1" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+      ]
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "category": "Space",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: coins/gems/rune luck/bulk caps (some unknown)",
+      "chance": { "type": "oneInN", "n": 700000000000, "display": "1/700B" },
+      "boosts": [
+        { "type": "coins", "mode": "multiplier", "cap": 8, "capStatus": "capped" },
+        { "type": "gems", "mode": "multiplier", "cap": null, "capStatus": "unknown" },
+        { "type": "runeLuck", "mode": "multiplier", "cap": null, "capStatus": "unknown" },
+        { "type": "runeBulk", "mode": "multiplier", "cap": null, "capStatus": "unknown" }
+      ]
+    }
+  ]
+}

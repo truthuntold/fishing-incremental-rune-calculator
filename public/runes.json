@@ -1,8 +1,113 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "generatedAt": "2025-08-30T00:00:00.000Z",
   "scalesVersion": "1.0",
   "runes": [
+    {
+      "id": "common",
+      "name": "Common",
+      "category": "Starter",
+      "rarity": "Common",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 1,
+        "display": "1/1"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "uncommon",
+      "name": "Uncommon",
+      "category": "Starter",
+      "rarity": "Uncommon",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 2,
+        "display": "1/2"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "rare",
+      "name": "Rare",
+      "category": "Starter",
+      "rarity": "Rare",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 5,
+        "display": "1/5"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "epic",
+      "name": "Epic",
+      "category": "Starter",
+      "rarity": "Epic",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 20,
+        "display": "1/20"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "category": "Starter",
+      "rarity": "Legendary",
+      "hidden": false,
+      "sourceNote": "Starter Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 100,
+        "display": "1/100"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
     {
       "id": "mythical",
       "name": "Mythical",
@@ -10,9 +115,18 @@
       "rarity": "Mythical",
       "hidden": false,
       "sourceNote": "Starter Rune — coins not capped",
-      "chance": { "type": "oneInN", "n": 1500, "display": "1/1.5k" },
+      "chance": {
+        "type": "oneInN",
+        "n": 1500,
+        "display": "1/1.5k"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
       ]
     },
     {
@@ -22,12 +136,204 @@
       "rarity": "Hidden",
       "hidden": true,
       "sourceNote": "Hidden: coins/essence/rune bulk/luck caps",
-      "chance": { "type": "oneInN", "n": 10000000, "display": "1/10M" },
+      "chance": {
+        "type": "oneInN",
+        "n": 10000000,
+        "display": "1/10M"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": 8, "capStatus": "capped" },
-        { "type": "essence", "mode": "multiplier", "cap": 3, "capStatus": "capped" },
-        { "type": "runeBulk", "mode": "multiplier", "cap": 2.5, "capStatus": "capped" },
-        { "type": "runeLuck", "mode": "multiplier", "cap": 5.5, "capStatus": "capped" }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 8,
+          "capStatus": "capped"
+        },
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.5,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 5.5,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "category": "Starter",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: coins/essence capped; rune bulk/luck unknown",
+      "chance": {
+        "type": "oneInN",
+        "n": 2290000000,
+        "display": "1/2.29B"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "prismatic",
+      "name": "Prismatic",
+      "category": "Starter",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: essence/rune bulk/rune luck/gems caps",
+      "chance": {
+        "type": "oneInN",
+        "n": 600000000000,
+        "display": "1/600B"
+      },
+      "boosts": [
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 8,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "oblivion",
+      "name": "Oblivion",
+      "category": "Starter",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: multi-resource caps",
+      "chance": {
+        "type": "oneInN",
+        "n": 50000000000000,
+        "display": "1/50T"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        },
+        {
+          "type": "fishingLuck",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.5,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "necronis",
+      "name": "Necronis",
+      "category": "Starter",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: rune speed divisor cap; multi-resource caps",
+      "chance": {
+        "type": "oneInN",
+        "n": 1000000000000000,
+        "display": "1/1QD"
+      },
+      "boosts": [
+        {
+          "type": "runeSpeed",
+          "mode": "divisor",
+          "cap": 1.05,
+          "capStatus": "capped"
+        },
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 5,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 1.5,
+          "capStatus": "capped"
+        }
       ]
     },
     {
@@ -36,9 +342,202 @@
       "category": "Magical",
       "hidden": false,
       "sourceNote": "Magical Rune — coins not capped",
-      "chance": { "type": "oneInN", "n": 1, "display": "1/1" },
+      "chance": {
+        "type": "oneInN",
+        "n": 1,
+        "display": "1/1"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "lumen",
+      "name": "LUMEN",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 2,
+        "display": "1/2"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "ember",
+      "name": "EMBER",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 5,
+        "display": "1/5"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "frost",
+      "name": "FROST",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 20,
+        "display": "1/20"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "storm",
+      "name": "STORM",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 100,
+        "display": "1/100"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "celest",
+      "name": "CELEST",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Magical Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 1500,
+        "display": "1/1.5K"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "void",
+      "name": "VOID",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Essence capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 6000,
+        "display": "1/6k"
+      },
+      "boosts": [
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 16,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "spirit",
+      "name": "SPIRIT",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Essence/coins caps",
+      "chance": {
+        "type": "oneInN",
+        "n": 25000,
+        "display": "1/25K"
+      },
+      "boosts": [
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 11,
+          "capStatus": "capped"
+        },
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 11,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "origin",
+      "name": "ORIGIN",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Essence/gems/coins caps; rune bulk 2.29x",
+      "chance": {
+        "type": "oneInN",
+        "n": 800000000000,
+        "display": "1/800B"
+      },
+      "boosts": [
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.29,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 51,
+          "capStatus": "capped"
+        }
       ]
     },
     {
@@ -47,12 +546,121 @@
       "category": "Magical",
       "hidden": false,
       "sourceNote": "Coins/gems/rune/rune bulk; some not maxed",
-      "chance": { "type": "oneInN", "n": 499990000000000, "display": "1/499.99T" },
+      "chance": {
+        "type": "oneInN",
+        "n": 499990000000000,
+        "display": "1/499.99T"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": 11, "capStatus": "capped" },
-        { "type": "gems", "mode": "multiplier", "cap": 1.19, "capStatus": "notMaxedYet" },
-        { "type": "rune", "mode": "multiplier", "cap": 3, "capStatus": "capped" },
-        { "type": "runeBulk", "mode": "multiplier", "cap": 2.2, "capStatus": "capped", "notes": ["normalized comma decimal 2,2x → 2.2x"] }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 11,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 1.19,
+          "capStatus": "notMaxedYet"
+        },
+        {
+          "type": "rune",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.2,
+          "capStatus": "capped",
+          "notes": [
+            "normalized comma decimal 2,2x → 2.2x"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aetherion",
+      "name": "AETHERION",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Fishing luck/essence/rune luck/rune bulk caps; gems not maxed",
+      "chance": {
+        "type": "oneInN",
+        "n": 65000000000000000,
+        "display": "1/65 QD"
+      },
+      "boosts": [
+        {
+          "type": "fishingLuck",
+          "mode": "multiplier",
+          "cap": 1.15,
+          "capStatus": "capped"
+        },
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 5,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": 1.15,
+          "capStatus": "notMaxedYet"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.2,
+          "capStatus": "capped"
+        }
+      ]
+    },
+    {
+      "id": "omega",
+      "name": "OMEGA",
+      "category": "Magical",
+      "hidden": false,
+      "sourceNote": "Coins/runeluck/rune bulk caps; sacrifice not maxed",
+      "chance": {
+        "type": "oneInN",
+        "n": 249990000000000000,
+        "display": "1/249.99 QD"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 6,
+          "capStatus": "capped"
+        },
+        {
+          "type": "sacrifice",
+          "mode": "multiplier",
+          "cap": 1.13,
+          "capStatus": "notMaxedYet"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": 3,
+          "capStatus": "capped"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": 2.29,
+          "capStatus": "capped"
+        }
       ]
     },
     {
@@ -61,9 +669,118 @@
       "category": "Space",
       "hidden": false,
       "sourceNote": "Space Rune — coins not capped",
-      "chance": { "type": "oneInN", "n": 1, "display": "1/1" },
+      "chance": {
+        "type": "oneInN",
+        "n": 1,
+        "display": "1/1"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": null, "capStatus": "notCapped" }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 2,
+        "display": "1/2"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "asteroid",
+      "name": "Asteroid",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 5,
+        "display": "1/5"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 20,
+        "display": "1/20"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 100,
+        "display": "1/100"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
+      ]
+    },
+    {
+      "id": "quasar",
+      "name": "Quasar",
+      "category": "Space",
+      "hidden": false,
+      "sourceNote": "Space Rune — coins not capped",
+      "chance": {
+        "type": "oneInN",
+        "n": 2000,
+        "display": "1/2k"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "notCapped"
+        }
       ]
     },
     {
@@ -72,13 +789,160 @@
       "category": "Space",
       "rarity": "Hidden",
       "hidden": true,
-      "sourceNote": "Hidden: coins/gems/rune luck/bulk caps (some unknown)",
-      "chance": { "type": "oneInN", "n": 700000000000, "display": "1/700B" },
+      "sourceNote": "Hidden: coins cap; gems/rune luck/rune bulk unknown",
+      "chance": {
+        "type": "oneInN",
+        "n": 700000000000,
+        "display": "1/700B"
+      },
       "boosts": [
-        { "type": "coins", "mode": "multiplier", "cap": 8, "capStatus": "capped" },
-        { "type": "gems", "mode": "multiplier", "cap": null, "capStatus": "unknown" },
-        { "type": "runeLuck", "mode": "multiplier", "cap": null, "capStatus": "unknown" },
-        { "type": "runeBulk", "mode": "multiplier", "cap": null, "capStatus": "unknown" }
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 8,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "blackhole",
+      "name": "Blackhole",
+      "category": "Space",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: essence cap; other caps unknown",
+      "chance": {
+        "type": "oneInN",
+        "n": 4990000000000,
+        "display": "1/4.99T"
+      },
+      "boosts": [
+        {
+          "type": "fishingLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "essence",
+          "mode": "multiplier",
+          "cap": 5,
+          "capStatus": "capped"
+        },
+        {
+          "type": "gems",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "astral",
+      "name": "Astral",
+      "category": "Space",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: coins cap; sacrifice/rune luck/rune bulk unknown",
+      "chance": {
+        "type": "oneInN",
+        "n": 49990000000000000000,
+        "display": "1/49.99Qn"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 4,
+          "capStatus": "capped"
+        },
+        {
+          "type": "sacrifice",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        }
+      ]
+    },
+    {
+      "id": "cosmos",
+      "name": "Cosmos",
+      "category": "Space",
+      "rarity": "Hidden",
+      "hidden": true,
+      "sourceNote": "Hidden: coins cap; sacrifice/rune luck/rune bulk unknown",
+      "chance": {
+        "type": "oneInN",
+        "n": 1000000000000000000000000,
+        "display": "1/1SP"
+      },
+      "boosts": [
+        {
+          "type": "coins",
+          "mode": "multiplier",
+          "cap": 11,
+          "capStatus": "capped"
+        },
+        {
+          "type": "sacrifice",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeLuck",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        },
+        {
+          "type": "runeBulk",
+          "mode": "multiplier",
+          "cap": null,
+          "capStatus": "unknown"
+        }
       ]
     }
   ]
